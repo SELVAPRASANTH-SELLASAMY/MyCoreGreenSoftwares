@@ -1,0 +1,512 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.MainFrame{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/Office_Building.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+.company{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+#company_name{
+    color:white;
+    font-size: 4.5vmin;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.company h3{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    padding: 2vmin;
+    font-size: 2.5vmin;
+}
+body{
+    width: 100%;
+    height: 100vmin;
+}
+nav{
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    right: 2vmin;
+    top: 2vmin;
+}
+#menu{
+    height: 2vh;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 1.8vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0vh 8vmin;
+}
+#menu_dropdown{
+    height: fit-content;
+    width: 12vmin;
+    background-color: rgb(0, 150, 40);
+    list-style: none;
+    border-radius: 1vmin;
+    margin-top: 0.5vmin;
+    border: 1.5px solid white;
+    transition: 100ms;
+}
+#menu_dropdown li{
+    padding: 0.5vmin;
+    height: 5vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vmin;
+    font-size: 1.5vmin;
+}
+#menu_dropdown li:hover{
+    background-color: rgb(0, 168, 45);
+    cursor: pointer;
+}
+.abt_dropdown{
+    visibility: hidden;
+}
+.abt:hover .abt_dropdown{
+    visibility: visible;
+}
+.abt:hover ul{
+    color: antiquewhite;
+}
+.theme_dropdown{
+    visibility: hidden;
+}
+.theme:hover .theme_dropdown{
+    visibility: visible;
+}
+.theme:hover ul{
+    color: antiquewhite;
+}
+.log_dropdown{
+    visibility: hidden;
+}
+.log:hover .log_dropdown{
+    visibility: visible;
+}
+.log:hover ul{
+    color: antiquewhite;
+}
+.innerframe{
+    position: absolute;
+    top: 102.5vh;
+    width: 97%;
+    left: 4vmin;
+    font-size: 2.25vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#coding{
+    height: 35vmin;
+    width: 40vmin;
+}
+#emp{
+    position: absolute;
+    height: 35vmin;
+    width: 40vmin;
+    top: 42.5vmin;
+    right: 0.15vmin;
+}
+#we{
+    position: absolute;
+    height: 35vmin;
+    width: 40vmin;
+    top: 84vmin;
+    left: 0.15vmin;
+}
+#embedded{
+    position: absolute;
+    height: 35vmin;
+    width: 40vmin;
+    top: 123.5vmin;
+    right: 0.15vmin;
+}
+.cmnt{
+    width:130vmin;
+    height:12.5vmin;
+    padding: 3.5vmin 3vmin;
+    background-color:rgb(231, 255, 232);
+    position: absolute;
+    text-align: center;
+    border-radius: 1vw;
+    box-shadow: 2.5px 2.5px rgb(131, 131, 131),0px 0px 1.5px 1.5px rgb(131,131,131);
+}
+#cmnt1{
+    left: 60vmin;
+    bottom: 5vmin;
+}
+#cmnt2{
+    right: 60vmin;
+    top: 60vmin;
+}
+#cmnt3{
+    left: 60vmin;
+    top: 100vmin;
+    padding: 2.5vmin 3vmin;
+}
+#cmnt4{
+    right: 60vmin;
+    top: 140.5vmin;
+    padding: 2.5vmin 3vmin;
+}
+.abt_com{
+    width:91.5vw;
+    height:fit-content;
+    text-align: center;
+    padding: 2.5vmin;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    margin: 0.25vmin;
+    font-size: 2.5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:hsl(122, 100%, 88%);
+    border-radius: 1.5vh;
+    border: 1px solid black;
+}
+#company_name1{
+    font-size: 3.5vmin;
+}
+.inner_2{
+    width: 100%;
+    height: fit-content;
+    position:absolute;
+    top: 166.5vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#delivery_process{
+    height: 65vmin;
+    width: 75vmin;
+    align-items: center;
+}
+.process{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 277vmin;
+}
+#careers{
+    width:100%;
+    height:10vmin;
+    text-align: center;
+    padding-top: 3.5vmin;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.25vmin;
+    background-color:hsl(122, 100%, 88%);
+    text-transform: uppercase;
+    border-radius: 1.5vmin;
+    border: 1px solid black;
+}
+.devops{
+    width:45%;
+    height:8vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25vmin;
+    background-color:hsl(122, 100%, 88%);
+    text-transform: uppercase;
+    border-radius: 1.5vmin;
+    border: 1px solid black;
+    margin-top: 1vmin;
+}
+.jobs{
+    height: 17vmin;
+    width: 45%;
+    background-color:rgb(231, 255, 232);
+    text-align: left;
+    padding: 2vmin;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25vmin;
+    border-radius: 1.5vmin;
+    margin-top: 1vmin;
+}
+#job_offer2{
+    height: fit-content;
+}
+#job_offer3{
+    height: fit-content;
+}
+.alignment1{
+    width: 100%;
+    height: fit-content;
+}
+#Technical_supports{
+    position: absolute;
+    right: 0vmin;
+    top: 10vmin;
+}
+#job_offer4{
+    position: absolute;
+    right: 0vmin;
+    top: 19vmin;
+}
+#job_offer3{
+    position: absolute;
+    right: 0vmin;
+    top: 46vmin;
+}
+#UI_designers{
+    position: absolute;
+    right: 0vmin;
+    top: 37vmin;
+}
+.careers1{
+    position: absolute;
+    top: 350vmin;
+    width: 100%;
+}
+.site_inform{
+    height: 30vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(231, 255, 232);
+    position: absolute;
+    bottom: -223.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.site_inform h3{
+    position: absolute;
+    font-size: 3vmin;
+    text-transform: uppercase;
+    padding: 0vmin 1vmin;
+    left: 37.5vmin;
+}
+.site_inform #site_logo{
+    position: absolute;
+    height: 7.5vmin;
+    width: 7.5vmin;
+    border-radius: 50vmin;
+    left: 30vmin;
+}
+#logo1{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+#txt3{
+    position:relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vmin;
+    width: 100vmin;
+    justify-items: left;
+}
+.site_inform p{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 11.5vmin;
+    left: 30.5vmin;
+}
+#copyright_logo{
+    height: 2.5vmin;
+    width: 2.5vmin;
+    position: absolute;
+    left: 42.25vw;
+    bottom: 2.5vmin;
+}
+.socialMedia_logo{
+    height: 5.5vmin;
+    width: 5.5vmin;
+    border-radius: 90px;
+    position: absolute;
+    left: 170.5vmin;
+    top: 9vmin;
+}
+#fb_logo{
+    left: 145.5vmin;
+}
+#whats_logo{
+    left: 155.5vmin;
+}
+#insta_logo{
+    left: 165.5vmin;
+}
+#tele_logo{
+    top: 18.5vmin;
+    left: 165.5vmin;
+}
+#linkedIn_logo{
+    top: 18.5vmin;
+    left: 145.5vmin;
+}
+#gmail_logo{
+    top: 18.5vmin;
+    left: 155.5vmin;
+    border-radius: 0px;
+}
+#copyright_txt{
+    position: absolute;
+    left: 43.65vw;
+    top: 25.22vmin;
+    font-size: 2.15vmin;
+}
+#txt1{
+    position: absolute;
+    left: 175vmin;
+    top: 25vmin;
+    font-size:1.5vmin ;
+}
+#txt2{
+    position: absolute;
+    left: 180vmin;
+    top: 27vmin;
+    font-size:1.5vmin ;
+}
+@media only screen and (max-width:800px){
+    .MainFrame{
+        height: 50vmin;
+    }
+    .company{
+        height:50vmin;
+    }
+    .innerframe{
+        top: 52.5vmin;
+        width: 92vw;
+        font-size: 2.25vmin;
+    }
+    .cmnt{
+        width:45vmin;
+        height:12.5vmin;
+    }
+    #cmnt1{
+        left: 45vmin;
+        height: fit-content;
+    }
+    #cmnt2{
+        right: 45vmin;
+        height: fit-content;
+        top: 52vmin;
+    }
+    #cmnt3{
+        left: 45vmin;
+        height: fit-content;
+        top: 92vmin;
+    }
+    #cmnt4{
+        right: 45vmin;
+        height: fit-content;
+        top: 125.5vmin;
+    }
+    .process{
+        top: 332vmin;
+    }
+    .careers1{
+        top: 405vmin;
+    }
+    #Technical_supports{
+        position: static;
+    }
+    #job_offer4{
+        position: static;
+    }
+    #job_offer3{
+        position: static;
+    }
+    #UI_designers{
+        position: static;
+    }
+    .jobs{
+        width: 100%;
+    }
+    .devops{
+        width: 100%;
+    }
+    #txt3{
+        width: 50vmin;
+        height: fit-content;
+        top: 16vmin;
+        left: 10vmin;
+    }
+    .site_inform{
+        top: auto;
+        bottom: -430vmin;
+        height: 45vmin;
+    }
+    #copyright_txt
+    {
+        top: 40vmin;
+        left: 38.5vmin;
+    }
+    #copyright_logo{
+        left: 35vmin;
+    }
+    .site_inform h3{
+        left: 18vmin;
+    }
+    .site_inform #site_logo{
+        left: 10vmin;
+    }
+    .socialMedia_logo{
+        left: 100.5vmin;
+        top: 15vmin;
+    }
+    #fb_logo{
+        left: 68.5vmin;
+    }
+    #whats_logo{
+        left: 78.5vmin;
+    }
+    #insta_logo{
+        left: 88.5vmin;
+    }
+    #tele_logo{
+        top: 25vmin;
+        left: 88.5vmin;
+    }
+    #linkedIn_logo{
+        top: 25vmin;
+        left: 68.5vmin;
+    }
+    #gmail_logo{
+        top: 25vmin;
+        left: 78.5vmin;
+        border-radius: 0px;
+    }
+    #txt1{
+        left: 72.5vmin;
+        top: 38vmin;
+    }
+    #txt2{
+        left: 78vmin;
+        top: 40vmin;
+    }
+}
+@media only screen and (min-width :450px) and (max-width:1000px) {
+    .site_inform{
+        bottom: -456vmin;
+    }
+}
